@@ -5,6 +5,3 @@
 ![image](https://github.com/OmGuptaDS/Predicting-Wine-Quality-A-Machine-Learning-Innovation/assets/149884670/11537e5c-d766-4d9b-bd84-0e07de585501)
 ![image](https://github.com/OmGuptaDS/Predicting-Wine-Quality-A-Machine-Learning-Innovation/assets/149884670/5949ad71-3d7b-483f-94dc-eeea58f7e3ac)
 
-
-
-
