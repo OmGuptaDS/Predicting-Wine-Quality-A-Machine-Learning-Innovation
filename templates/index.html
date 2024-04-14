@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neurons Disease Detection By Using Machine Learning</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <section class="header">
+    
+  </section>
+
+  <hr>
+
+  
+  <section class="wine" id="detect">
+    <div class="datafield">
+      <h1>Enter The Features Of Wine</h1>
+      <div class="input-box">
+        <h2>Input Features</h2>
+        <form action="/" method="post">
+          <label for="feature1">Feature 1</label>
+          <input type="text" name="feature1" placeholder="Feature 1" required><br><br>
+
+          <label for="feature2">Feature2</label>
+          <input type="text" name="feature2" placeholder="volatile acidity" required><br><br>
+
+          <label for="feature3">Feature3</label>
+          <input type="text" name="feature3" placeholder="citric acid" required><br><br>
+
+          <label for="feature4">Feature4</label>
+          <input type="text" name="feature4" placeholder="residual sugar	" required><br><br>
+
+          <label for="feature5">Feature5</label>
+          <input type="text" name="feature5" placeholder="chlorides" required><br><br>
+
+          <label for="feature6">Feature6</label>
+          <input type="text" name="feature6" placeholder="free sulfur dioxide" required><br><br>
+
+          <label for="feature7">Feature7</label>
+          <input type="text" name="feature7" placeholder="total sulfur dioxide	" required><br><br>
+
+          <label for="feature8">Feature8</label>
+          <input type="text" name="feature8" placeholder="density" required><br><br>
+
+          <label for="feature9">Feature9</label>
+          <input type="text" name="feature9" placeholder="pH" required><br><br>
+
+          <label for="feature10">Feature10</label>
+          <input type="text" name="feature10" placeholder="sulphates" required><br><br>
+
+          <label for="feature11">Feature11</label>
+          <input type="text" name="feature11" placeholder="alcohol" required><br><br>
+
+          <button class="predict-button" type="submit">Predict Quality</button>
+        </form>
+      </div>
+      <div class="output-box">
+        <h2>Prediction Results</h2>
+        {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+
+ 
+
+  <!-- ------------------------  Contact Us   -------------------- -->
+
+  <section class="contact-us" id="contactus">
+    <div class="title">
+      <h2>Contact US</h2>
+      <p>Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible</p><br>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="info-item">
+            <span class="circle"><i class="fa fa-map-marker"></i></span>
+            <p>Itwari Nagpur, Maharashtra India</p>
+          </div>
+          <div class="info-item">
+            <span class="circle"><i class="fa fa-envelope"></i></span>
+            <a href="mailto:omg343505@gmail.com">omg343505@gmail.com</a>
+          </div>
+          <div class="info-item">
+            <span class="circle"><i class="fa fa-phone"></i></span>
+            <a href="tel:+91 8669386472">+91 866 938 6472</a>
+          </div>
+          <ul class="social-icons">
+            <li><a href="https://www.instagram.com/omgupta_688?igsh=eG8wcms2bXN2ZG03"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li><a
+                href="https://www.linkedin.com/in/om-gupta-1b59102b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                  class="fa fa-twitter"></i></a></li>
+            <li><a
+                href="https://www.linkedin.com/in/om-gupta-1b59102b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                  class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/omgupta_688?igsh=eG8wcms2bXN2ZG03"><i
+                  class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7441.965615194267!2d79.1045377414466!3d21.153082472109823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0da51dde853%3A0x3f8ae6437bd6de1a!2sItwari%2C%20Nagpur%2C%20Maharashtra%20440002!5e0!3m2!1sen!2sin!4v1712731718241!5m2!1sen!2sin"
+            frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ------------------------  Footer  ---------------------- -->
+
+
+  <section class="About-us" id="aboutus">
+    
+    <footer>
+      <p>Made with <i class="fa fa-heart-o"></i> by Om Gupta & Team</p>
+    </footer>
+  </section>
+
+  <!-- ---------------- JavaScript for Toggle Menu-----------------   -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      navToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
